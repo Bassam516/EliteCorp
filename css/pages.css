@@ -1,0 +1,375 @@
+/*start about page*/
+
+/*start about section*/
+
+.head {
+    background: url(../photos/tech-desk-021.jpg) no-repeat center center;
+    background-size: cover;
+    min-height: 500px;
+    position: relative;
+}
+.head:before{
+    content: "about";
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 140px;
+    line-height: 3;
+    letter-spacing: 6px;
+    background-color: #ff6767c9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/*end about section*/
+/*start id section*/
+.id{
+    padding:100px 0;
+}
+.id p{
+    font-size: 18px;
+    color: #797979;
+    font-weight: 500;
+}
+.id .id-card img{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    margin-right:20px;
+}
+.id .id-card h5{
+    display:inline-block;
+    color: #09526ddb;
+    font-weight: bold;
+    text-align:left;
+    margin-top:50px;
+}
+.id .id-card span{
+    color: #aaa;
+    font-weight: 400;
+    line-height: 2;
+}
+/*end id section*/
+/*start about-services section*/
+.about-services{
+    padding:80px 0;
+}
+.about-services h4{
+    display: inline-block;
+    color: #08526D;
+    margin: 20px;
+    font-size:22px;
+}
+.about-services p{
+    color: #6f6c6c;
+}
+.about-services i{
+    color: #fff;
+    background-color: #08526D;
+    padding: 10px;
+    font-size: 20px;
+}
+/*end about-services section*/
+/*start team section*/
+.team {
+    padding: 80px 0 ;
+    background-color: #f9fafb;
+}
+.team h2 {
+    font-weight: bold;
+}
+.team p {
+    line-height: 2;
+    color: #555;
+    margin: 30px 0;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+.team li.col-lg-3.col-md-6.col-sm-12 {
+    position:relative;
+    padding:20px 15px;
+}
+
+.team .img-overlay{
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    background-color: #000000db;
+    width: calc(100% - 30px);
+    height: calc(100% - 40px);
+    padding: 30px 0;
+    cursor:pointer;
+    opacity:0;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+.team .img-overlay .container{
+    border: 1px solid #929292;
+    width: 80%;
+    height: 95%;
+}
+.team .img-overlay .container .t{
+    margin:40% auto;
+}
+.team .img-overlay .container .t h5{
+    color: #ed1d24;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.team .img-overlay .container .t span{
+    color: #fff;
+    text-transform: uppercase;
+}
+.team ul li:hover .img-overlay{
+    opacity:1;
+}
+/*end team section*/
+/*end about page*/
+/*start work page*/
+/*start head section*/
+.head2 {
+    background: url(../photos/tech-desk-021.jpg) no-repeat center center;
+    background-size: cover;
+    min-height: 500px;
+    position: relative;
+}
+.head2:before{
+    content: "work";
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 140px;
+    line-height: 3;
+    letter-spacing: 6px;
+    background-color: #ff6767c9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/*end head section*/
+/*start contact-us section*/
+.contactUs{
+    margin-top:-16px;
+}
+/*end contact-us section*/
+
+/*end work page*/
+/*start contact page*/
+/*start head section*/
+.head3 {
+    background: url(../photos/tech-desk-021.jpg) no-repeat center center;
+    background-size: cover;
+    min-height: 500px;
+    position: relative;
+}
+.head3:before{
+    content: "contact";
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 140px;
+    line-height: 3;
+    letter-spacing: 6px;
+    background-color: #ff6767c9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/*end head section*/
+/*start map section*/
+.map {
+    position: relative;
+    margin: 0 0 80px;
+}
+.map .container-fluid{
+    padding:0;
+}
+.map iframe{
+    width:100%;
+}
+.map .address{
+    background-color: #000;
+    color: #fff;
+    padding: 60px 140px;
+    font-size: 14px;
+    font-weight: 300;
+    position: absolute;
+    bottom: -22%;
+    right: 25%;
+}
+.map .address p a{
+     color: #fff;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.map .address p a:hover{
+    text-decoration:none;
+     color: #ed1d24;
+}
+/*end map section*/
+/*start contact-form section*/
+.contact-form{
+    padding:80px 0;
+}
+.contact-form .f {
+    max-width: 700px;
+    margin:10px auto;
+}
+.contact-form h2{
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.contact-form .f input[type="submit"]{
+    color: #fff;
+    background-color: #ed1d24;
+    text-transform: uppercase;
+    font-weight: bold;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.contact-form .f input[type="submit"]:hover{
+    background-color:#08526D;
+    cursor:pointer;
+}
+.contact-form .f input[type="submit"]:focus{
+    border-color:#fff;
+    box-shadow:none;
+}
+/*end contact-form section*/
+
+/*end contact page*/
+/*start blog page*/
+
+/*start head section*/
+.head4 {
+    background: url(../photos/tech-desk-021.jpg) no-repeat center center;
+    background-size: cover;
+    min-height: 500px;
+    position: relative;
+}
+.head4:before{
+    content: "Blog";
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 140px;
+    line-height: 3;
+    letter-spacing: 6px;
+    background-color: #ff6767c9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/*end head section*/
+/*start blog-card section*/
+.blog-card{
+    margin: 100px auto 40px;
+    max-width: 1000px;
+    
+}
+.blog-card .b-card{
+    border-bottom: 1px solid #d1d1d1;
+    padding-bottom: 30px;
+    margin-bottom:30px;
+}
+.blog-card h3{
+    color: #08526D;
+}
+.blog-card h6{
+    font-size: 13px;
+    color: #868686;
+    font-weight: 500;
+    margin-top:15px;
+}
+.blog-card h6 span{
+    color: #ed1d24;
+}
+.blog-card img{
+    width:100%;
+    margin:30px 0;
+}
+.blog-card p{
+    font-size: 14px;
+    color: #757575;
+    margin-bottom: 25px;
+}
+.blog-card a{
+    color: #fff;
+    background-color: #ed1d24;
+    padding: 8px 25px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+.blog-card a:hover{
+    text-decoration:none;
+    background-color:#08526D;
+}
+/*end blog-card section*/
+
+/*end blog page*/
+
+/*start media*/
+@media(max-width:767px) {
+.map .address{
+    position: absolute;
+    bottom: -22%;
+    right: 0;
+}
+.head{
+    min-height:300px;
+}
+.head:before{
+    font-size:90px;
+}
+.head2{
+    min-height:300px;
+}
+.head2:before{
+    font-size:90px;
+}
+.head3{
+    min-height:300px;
+}
+.head3:before{
+    font-size:60px;
+    line-height:5;
+}
+.head4{
+    min-height:300px;
+}
+.head4:before{
+    font-size:90px;
+}
+}
+@media(min-width:768px) and (max-width:991px) {
+
+.map .address{
+    position: absolute;
+    bottom: -22%;
+    right: 0;
+    left:0;
+}
+
+
+}
+
+/*end media*/
