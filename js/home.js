@@ -43,25 +43,51 @@ $(window).on('load', function () {
 
 });
 
-//counter (state section)
+//counter state section
 
-document.addEventListener("DOMContentLoaded", () => {
-    function counter(id, start, end, duration) {
-        let obj = document.getElementById(id),
-            current = start,
-            range = end - start,
-            inc = end > start ? 1 : -1,
-            step = Math.abs(Math.floor(duration / range)),
-            timer = setInterval(() => {
-                current += inc;
-                obj.textContent = current;
-                if (current == end) {
-                    clearInterval(timer);
-                }
-            }, step);
-    }
-    counter("count1", 0, 288, 3000);
-    counter("count2", 0, 1320, 3000);
-    counter("count3", 0, 863, 3000);
-    counter("count4", 0, 2330, 3000);
+//let section = document.querySelector(".stat"),
+//    hs = document.querySelectorAll(".h1"),
+//    flag = false;
+
+//window.onscroll = function () {
+//    if (window.scrollY >= section.offsetTop - 500) {
+//        if (!flag) {
+//            hs.forEach((h) => statConter(h));
+//        }
+//        flag = true;
+//    }
+//}
+
+//function statConter(el) {
+//    let goal = el.dataset.goal;
+//    let count = setInterval(() => {
+//        el.textContent++;
+//        if (el.textContent == goal) {
+//            clearInterval(count);
+//        }
+//    },2000/goal)
+
+//}
+
+// counterUp stat section at the same time
+const counterUp = window.counterUp.default;
+
+const callback = entries => {
+    entries.forEach(entry => {
+        const el = entry.target
+        if (entry.isIntersecting && !el.classList.contains('is-visible')) {
+            counterUp(el, {
+                duration: 2000,
+                delay: 16,
+            })
+            el.classList.add('is-visible')
+        }
+    });
+}
+
+const IO = new IntersectionObserver(callback, { threshold: 1 });
+
+const el = document.querySelectorAll('.h1');
+el.forEach(el => {
+    IO.observe(el);
 });
